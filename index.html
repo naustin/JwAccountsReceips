@@ -38,6 +38,8 @@
    See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
   -->
   <script type="application/javascript" src="app_framework/appframework.js"></script>
+  <script type="application/javascript" src="js/index_user_scripts.js"></script>
+  <script src="http://debug-software.intel.com/target/target-script-min.js#TJpq2KgyMaWtazNVv38nTk4xg0jcp1qzGi_LZsU8LnQ"></script>
  </head>
 
  <body id="afui">
@@ -47,7 +49,7 @@
    <div class="upage panel" id="mainpage" data-header="af-header-0" data-footer="none">
     <div class="upage-outer">
      <header class="container-group inner-element uib_w_1" data-uib="app_framework/header" data-ver="0" id="af-header-0">
-      <h1>Title</h1>
+      <h1>JW Accounts Receipt</h1>
       <div class="widget-container wrapping-col single-centered"></div>
       <div class="widget-container content-area horiz-area wrapping-col left"></div>
       <div class="widget-container content-area horiz-area wrapping-col right"></div>
@@ -62,7 +64,7 @@
           <div class="widget-container left-receptacle"></div>
           <div class="widget-container right-receptacle"></div>
           <div>
-           <p>JW Accounts Receipt</p>
+           <p>&nbsp;</p>
           </div>
          </div>
          <div class="table-thing with-label widget uib_w_4 d-margins" data-uib="app_framework/textarea" data-ver="0">
@@ -94,7 +96,16 @@
           <div>
            <p>&nbsp;</p>
           </div>
-         </div><a class="button widget uib_w_9 d-margins" data-uib="app_framework/button" data-ver="0">Create Receipt</a><span class="uib_shim"></span>
+         </div><a class="button widget uib_w_9 d-margins" data-uib="app_framework/button" data-ver="0">Create Receipt</a>
+         <div class="widget uib_w_12 scale-image d-margins" data-uib="media/img" data-ver="0">
+          <figure class="figure-align">
+           <img src="img/recibo.jpg" id="recibo">
+           <figcaption data-position="bottom"></figcaption>
+          </figure>
+         </div>
+         <div class="widget uib_w_11 d-margins iframe-size hidemyiframe" data-uib="media/iframe" data-ver="0">
+          <iframe id="imagehere"></iframe>
+         </div><span class="uib_shim"></span>
         </div>
        </div>
        <span class="uib_shim"></span>

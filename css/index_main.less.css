@@ -330,3 +330,31 @@ body:not(#afui) .upage-outer {
 #afui .with-label .label-top-right {
   text-align: right !important;
 }
+[data-uib="media/iframe"] > iframe {
+  width: 100%;
+  height: 100%;
+}
+@media all {
+  #afui .iframe-size {
+    width: 100%;
+  }
+}
+@media all {
+  
+}
+.figure-align {
+  display: table;
+  margin: 0px auto;
+}
+.figure-align img {
+  width: 100%;
+}
+.image-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media all {
+  #afui .scale-image {
+    width: 200px;
+  }
+}

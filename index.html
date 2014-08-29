@@ -32,6 +32,7 @@
    		};
    		document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
   </script>
+     
   <script type="application/javascript" src="app_framework/appframework.ui.min.js"></script>
   <!--   
    You may substitute jQuery for the App Framework selector library.
@@ -45,7 +46,7 @@
  <body id="afui">
 
   <!-- content goes here-->
-  <div class="uwrap" id="content">
+  <div class="uwrap" id="content" overflow-y="auto" >
    <div class="upage panel" id="mainpage" data-header="af-header-0" data-footer="none">
     <div class="upage-outer">
      <header class="container-group inner-element uib_w_1" data-uib="app_framework/header" data-ver="0" id="af-header-0">
@@ -97,15 +98,12 @@
            <p>&nbsp;</p>
           </div>
          </div><a class="button widget uib_w_9 d-margins" data-uib="app_framework/button" data-ver="0">Create Receipt</a>
-         <div class="widget uib_w_12 scale-image d-margins" data-uib="media/img" data-ver="0">
-          <figure class="figure-align">
-           <img src="img/recibo.jpg" id="recibo">
-           <figcaption data-position="bottom"></figcaption>
-          </figure>
+         <div class="widget uib_w_12 scale-image d-margins" >
+          
+           <canvas id="receiptcanvas" width="2000" height="2000" ></canvas>
+                    
          </div>
-         <div class="widget uib_w_11 d-margins iframe-size hidemyiframe" data-uib="media/iframe" data-ver="0">
-          <iframe id="imagehere"></iframe>
-         </div><span class="uib_shim"></span>
+         <span class="uib_shim"></span>
         </div>
        </div>
        <span class="uib_shim"></span>

@@ -8,25 +8,21 @@
  {
          $(document).on("click", ".uib_w_9", function(evt)
         {
-        var ctx = document.getElementById('imagehere');
+              var ctx = document.getElementById('receiptcanvas');
         if (ctx.getContext) {
         
             var canv = ctx.getContext('2d');
      
             //Loading of the home test image - img1
             var img1 = new Image();
-
-            //drawing of the test image - img1
+      
+            //wait for image to load and then draw it on the canvas
             img1.onload = function () {
-                //draw background image
                 canv.drawImage(img1, 0, 0);
-                //draw a box over the top
-                canv.fillStyle = "rgba(200, 0, 0, 0.5)";
-                canv.fillRect(0, 0, 500, 500);
+            };
 
-        };
-
-        img1.src = 'img/recibo.jpg';
+            img1.src = 'images/recibo.jpg';
+        
     }
         });
 }

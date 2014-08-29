@@ -8,21 +8,27 @@
  {
          $(document).on("click", ".uib_w_9", function(evt)
         {
-              var ctx = document.getElementById('receiptcanvas');
-        if (ctx.getContext) {
-        
-            var canv = ctx.getContext('2d');
-     
+              var receiptcanvas = document.getElementById('receiptcanvas');
+        if (receiptcanvas.getContext) {
+            
+            var ctx = receiptcanvas.getContext('2d');
+            
+            
             //Loading of the home test image - img1
             var img1 = new Image();
       
             //wait for image to load and then draw it on the canvas
             img1.onload = function () {
-                canv.drawImage(img1, 0, 0);
+                ctx.drawImage(img1, 0, 0);
+                ctx.font="20px Georgia";
+                ctx.fillText("Hello World!",10,50);
             };
 
             img1.src = 'images/recibo.jpg';
-        
+            
+            
+             
+            
     }
         });
 }
